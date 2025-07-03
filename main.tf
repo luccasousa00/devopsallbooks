@@ -28,18 +28,15 @@ sudo apt update
 sudo apt install -y nginx
 
 # Remove a página padrão
-sudo rm -f /var/www/html/index.nginx-debian.html
-
+#sudo rm -f /var/www/html/index.nginx-debian.html
 # Cria seu index.html personalizado
-echo "<h1>Feito com Terraform </h1>" | sudo tee /var/www/html/index.html
-
+#echo "<h1>Feito com Terraform </h1>" | sudo tee /var/www/html/index.html
 # Reinicia o Nginx para garantir que tudo está rodando
+
 sudo systemctl enable nginx
 sudo systemctl restart nginx
 EOF
-
-
   tags = {
-    Name = "Teste AWS 4"
+    Name = "Teste AWS 6"
   }
 }
